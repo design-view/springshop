@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   tools {
-    jdk "jdk17"
-    maven "Ga"
+    jdk "Jdk17"
+    gradle "Ga"
   }
   environment { 
     DOCKERHUB_CREDENTIALS = credentials('dockerhubToken') 
