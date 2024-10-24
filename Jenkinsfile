@@ -22,6 +22,7 @@ pipeline {
     stage('Gradle Build') {
       steps {
         echo 'Gradle Build'
+        sh 'chmod +x ./gradlew' // 실행 권한 부여
         sh './gradlew build -x test'
       }
     }
